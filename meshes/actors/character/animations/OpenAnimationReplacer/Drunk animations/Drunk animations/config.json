@@ -1,0 +1,713 @@
+{
+    "name": "Animations",
+    "priority": 6002107,
+    "conditions": [
+        {
+            "condition": "OR",
+            "requiredVersion": "1.0.0.0",
+            "Conditions": [
+                {
+                    "condition": "OR",
+                    "requiredVersion": "1.0.0.0",
+                    "Conditions": [
+                        {
+                        "condition": "IsInFaction",
+                        "requiredVersion": "1.0.0.0",
+                        "Faction": {
+                            "pluginName": "SkyrimNet_iActions.esp",
+                            "formID": "4DFD"
+                            }
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Skyrim On Skooma.esp",
+                                "formID": "81F"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SunHelmSurvival.esp",
+                                "formID": "36D062"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "iNeed.esp",
+                                "formID": "C4F1"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "LastSeed.esp",
+                                "formID": "10880"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "LastSeed.esp",
+                                "formID": "10881"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Immersive Needs ESL.esp",
+                                "formID": "849"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "RealisticNeedsandDiseases.esp",
+                                "formID": "12CB"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "RealisticNeedsandDiseases.esp",
+                                "formID": "491B"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasSpell",
+                            "requiredVersion": "1.0.0.0",
+                            "Spell": {
+                                "pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+                                "formID": "4F81A5"
+                            }
+                        },
+                        {
+                            "condition": "HasSpell",
+                            "requiredVersion": "1.0.0.0",
+                            "Spell": {
+                                "pluginName": "Complete Alchemy & Cooking Overhaul.esp",
+                                "formID": "4F81A7"
+                            }
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "ADER.esp",
+                                "formID": "D62"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SLDrunkRedux.esp",
+                                "formID": "5E5A"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SLDrunkRedux.esp",
+                                "formID": "8EEE"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "alcoholiceffect.esp",
+                                "formID": "D62"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "alcoholiceffect.esp",
+                                "formID": "12C5"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "1CC40"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "479C4"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "1CC42"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "1CC41"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "479CE"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "479D0"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "479D1"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "479D2"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "58733"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "8A748"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "A18BC"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "A18BD"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "13AF"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "1F51"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "33FD"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "4627"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "4628"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Cannabis.esp",
+                                "formID": "9D4D"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Conner's Survival Mode.esp",
+                                "formID": "4256B"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "CompareValues",
+                            "requiredVersion": "1.0.0.0",
+                            "Value A": {
+                                "value": 0.0
+                            },
+                            "Comparison": "==",
+                            "Value B": {
+                                "value": 5.0
+                            }
+                        },
+                        {
+                            "condition": "CompareValues",
+                            "requiredVersion": "1.0.0.0",
+                            "Value A": {
+                                "value": 0.0
+                            },
+                            "Comparison": "==",
+                            "Value B": {
+                                "value": 6.0
+                            }
+                        },
+                        {
+                            "condition": "CompareValues",
+                            "requiredVersion": "1.0.0.0",
+                            "Value A": {
+                                "value": 0.0
+                            },
+                            "Comparison": "==",
+                            "Value B": {
+                                "value": 7.0
+                            }
+                        },
+                        {
+                            "condition": "CompareValues",
+                            "requiredVersion": "1.0.0.0",
+                            "Value A": {
+                                "value": 0.0
+                            },
+                            "Comparison": "==",
+                            "Value B": {
+                                "value": 8.0
+                            }
+                        },
+                        {
+                            "condition": "CompareValues",
+                            "requiredVersion": "1.0.0.0",
+                            "Value A": {
+                                "value": 0.0
+                            },
+                            "Comparison": "==",
+                            "Value B": {
+                                "value": 9.0
+                            }
+                        },
+                        {
+                            "condition": "CompareValues",
+                            "requiredVersion": "1.0.0.0",
+                            "Value A": {
+                                "value": 0.0
+                            },
+                            "Comparison": "==",
+                            "Value B": {
+                                "value": 10.0
+                            }
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "12C9"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17A3D"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17FA4"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "18516"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "18A87"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "19006"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "19AE9"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "169ED"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "19015"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "E3CBB"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "12C4"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "14981"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "174C0"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17A23"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17A33"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17FA3"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "18515"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "18A86"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "18FF9"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "19004"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "19014"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "1A061"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "1A078"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "1EBE5"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "2E53F"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasSpell",
+                            "requiredVersion": "1.0.0.0",
+                            "Spell": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17A27"
+                            }
+                        },
+                        {
+                            "condition": "HasSpell",
+                            "requiredVersion": "1.0.0.0",
+                            "Spell": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17A28"
+                            }
+                        },
+                        {
+                            "condition": "HasSpell",
+                            "requiredVersion": "1.0.0.0",
+                            "Spell": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17A2B"
+                            }
+                        },
+                        {
+                            "condition": "HasSpell",
+                            "requiredVersion": "1.0.0.0",
+                            "Spell": {
+                                "pluginName": "SexLabSkoomaWhore.esp",
+                                "formID": "17A2D"
+                            }
+                        },
+                        {
+                            "condition": "IsCurrentPackage",
+                            "requiredVersion": "1.0.0.0",
+                            "Package": {
+                                "pluginName": "Skyrim.esm",
+                                "formID": "5031C"
+                            }
+                        },
+                        {
+                            "condition": "IsCurrentPackage",
+                            "requiredVersion": "1.0.0.0",
+                            "Package": {
+                                "pluginName": "Skyrim.esm",
+                                "formID": "2A321"
+                            }
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Gourmet.esp",
+                                "formID": "804"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Gourmet.esp",
+                                "formID": "805"
+                            },
+                            "Active effects only": false
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Animated Inebriation.esp",
+                                "formID": "D63"
+                            },
+                            "Active effects only": true
+                        },
+                        {
+                            "condition": "IsInFaction",
+                            "requiredVersion": "1.0.0.0",
+                            "Faction": {
+                                "pluginName": "Animated Inebriation.esp",
+                                "formID": "97ECB1"
+                            }
+                        },
+                        {
+                            "condition": "HasMagicEffect",
+                            "requiredVersion": "1.0.0.0",
+                            "Magic effect": {
+                                "pluginName": "Animated Inebriation.esp",
+                                "formID": "3D4BC"
+                            },
+                            "Active effects only": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{% if render_mode == "full" or render_mode == "thoughts" %}
+
+{% set drunk_level = get_faction_rank(actorUUID, "SkyrimNet_DrunkFaction") %}
+{% if drunk_level >= 0 %}
+{{ "## Intoxication" }}
+{% if drunk_level == 0 %}
+{{ decnpc(actorUUID).name }} is tipsy - slightly impaired coordination and inhibitions lowered.
+{% else if drunk_level == 1 %}
+{{ decnpc(actorUUID).name }} is drunk - noticeably intoxicated with slurred speech and poor balance.
+{% else if drunk_level == 2 %}
+{{ decnpc(actorUUID).name }} is plastered - heavily drunk, very unsteady, and prone to poor decisions.
+{% else if drunk_level == 3 %}
+{{ decnpc(actorUUID).name }} is black-out drunk - barely functional and consciousness is fading.
+{% endif %}
+{% endif %}
+
+{% else if render_mode == "dialogue_target" %}
+
+{% set drunk_level = get_faction_rank(actorUUID, "SkyrimNet_DrunkFaction") %}
+{% if drunk_level >= 0 %}
+{{ "## Intoxication" }}
+{% if drunk_level == 0 %}
+{{ decnpc(actorUUID).name }} seems slightly off - flushed cheeks, overly relaxed demeanor, subtle hint of alcohol on their breath.
+{% else if drunk_level == 1 %}
+{{ decnpc(actorUUID).name }} is noticeably drunk - swaying slightly, slurred words, and clearly intoxicated.
+{% else if drunk_level == 2 %}
+{{ decnpc(actorUUID).name }} is heavily drunk - stumbling badly, struggling to stand straight, speech is very slurred.
+{% else if drunk_level == 3 %}
+{{ decnpc(actorUUID).name }} is completely wasted - barely able to stand or speak coherently, on the verge of passing out.
+{% endif %}
+{% endif %}
+
+{% endif %}
