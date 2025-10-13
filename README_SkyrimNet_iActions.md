@@ -1,5 +1,5 @@
 # SkyrimNet iActions
-**Version 0.0.2** (2025-10-09)
+**Version 0.1.0** (2025-10-13)
 
 A SkyrimNet extension that adds dynamic NPC drunk states with OAR-driven animations and faction-based progression.
 
