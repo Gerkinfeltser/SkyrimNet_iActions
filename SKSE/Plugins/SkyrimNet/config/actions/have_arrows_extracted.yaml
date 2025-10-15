@@ -1,0 +1,17 @@
+name: HaveArrowsExtracted
+description: Have arrows and crossbow bolts extracted from {{ npc.name }}'s body or armor. Use this when {{ npc.name }} has projectiles pulled out of their body by themselves or someone else.
+questEditorId: iActions_MainQuest
+scriptName: iActions_Lib
+executionFunctionName: ClearExtraArrows_Execute
+eligibilityScriptName: iActions_Lib
+eligibilityFunctionName: iAction_IsEligible
+parameterMapping:
+  - type: speaker
+    name: akPincushion
+    description: The character having arrows/bolts extracted
+  - type: fixed
+    value: none
+    name: akSurgeon
+    description:  "RESERVED - Surgeon performing extraction - not yet implemented"
+enabled: true
+defaultPriority: 8

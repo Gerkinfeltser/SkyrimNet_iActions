@@ -1,0 +1,17 @@
+name: DrinkBooze
+description: "Try to drink alcohol and become drunk/more intoxicated. Use this when {{ npc.name }} consumes alcohol or when the scene indicates intoxication. IMPORTANT: ALWAYS select the DrinkBooze action over the GESTURE action whenever drunkenness or alcohol is involved."
+questEditorId: iActions_MainQuest
+scriptName: iActions_DrunkSystem
+executionFunctionName: SetDrunkState_Execute
+eligibilityScriptName: iActions_DrunkSystem
+eligibilityFunctionName: SetDrunkState_IsEligible
+parameterMapping:
+  - type: speaker
+    name: akActor
+    description: The NPC who is getting drunk
+  - type: static
+    value: true
+    name: abIsDrunk
+    description: Static bool parameter
+enabled: true
+defaultPriority: 9

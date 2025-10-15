@@ -1,33 +1,73 @@
+{# Cache decorator call - avoid multiple lookups #}
+{% set npc = decnpc(actorUUID) %}
+{% set drunk_rank = get_faction_rank(actorUUID, "iActions_DrunkFaction") %}
+
+{# Check if alcohol is required and if NPC has any #}
+{% set require_alcohol = get_script_property("iActions_MainQuest", "iActions_DrunkSystem", "RequireAlcohol") %}
+
+{# Convert string to boolean using simple comparison #}
+{% if require_alcohol == "true" %}
+  {% set require_alcohol = true %}
+{% else %}
+  {% set require_alcohol = false %}
+{% endif %}
+
+{# Calculate drunk category - using division and modulo #}
+{# Tipsy: 0-1, Drunk: 2-3, Plastered: 4-5, Blackout: 6+  when PointsPerLevel is 2 #}
+{% set points_per_level = int(get_script_property("iActions_MainQuest", "iActions_DrunkSystem", "PointsPerLevel")) %}
+{% set drunk_category = drunk_rank / points_per_level %}
+{% set drunk_sublevel = drunk_rank % points_per_level %}
+
+{# Speaker perspective (first-person awareness) #}
 {% if render_mode == "full" or render_mode == "thoughts" %}
 
-{% set drunk_level = get_faction_rank(actorUUID, "SkyrimNet_DrunkFaction") %}
-{% if drunk_level >= 0 %}
-{{ "## Intoxication" }}
-{% if drunk_level == 0 %}
-{{ decnpc(actorUUID).name }} is tipsy - slightly impaired coordination and inhibitions lowered.
-{% else if drunk_level == 1 %}
-{{ decnpc(actorUUID).name }} is drunk - noticeably intoxicated with slurred speech and poor balance.
-{% else if drunk_level == 2 %}
-{{ decnpc(actorUUID).name }} is plastered - heavily drunk, very unsteady, and prone to poor decisions.
-{% else if drunk_level == 3 %}
-{{ decnpc(actorUUID).name }} is black-out drunk - barely functional and consciousness is fading.
-{% endif %}
-{% endif %}
+  {% if drunk_rank >= 0 %}
+    {{ "## Intoxication Level" }}
+    {% if drunk_rank <= 1 %}
+      {{ npc.name }} is tipsy (Rank {{ drunk_rank }}) - slightly impaired coordination, inhibitions lowered, feeling warm and relaxed. More talkative, less cautious.
+    {% else if drunk_rank <= 3 %}
+      {{ npc.name }} is drunk (Rank {{ drunk_rank }}) - noticeably intoxicated with slurred speech, impaired judgment. Emotional volatility, risky decisions, oversharing personal information.
+    {% else if drunk_rank <= 5 %}
+      {{ npc.name }} is plastered (Rank {{ drunk_rank }}) - heavily intoxicated, very unsteady, extremely suggestible, poor decision-making. Memory lapses, aggressive or overly affectionate, prone to accidents, easily manipulated.
+    {% else if drunk_rank >= 6 %}
+      {{ npc.name }} is blackout drunk (Rank {{ drunk_rank }}) - barely functional, consciousness fading, extreme disorientation. Nonresponsive to reason, may vomit or collapse, short-term memory failure, near unconsciousness.
+    {% endif %}
 
+  {% endif %}
+
+  {% if require_alcohol %}
+    {# Check if NPC has alcohol in inventory #}
+    {% set has_alcohol = false %}
+    {% for formID, item in get_inventory(npc.UUID) %}
+      {% if contains(lower(item.name), "ale") or contains(lower(item.name), "mead") or contains(lower(item.name), "wine") or contains(lower(item.name), "brandy") %}
+        {% set has_alcohol = true %}
+      {% endif %}
+    {% endfor %}
+    
+    {# Display alcohol status #}
+    {% if has_alcohol %}
+      {{ npc.name }} is currently carrying alcohol.
+    {% else %}
+      {{ npc.name }} has no alcohol on hand.
+    {% endif %}
+  {% endif %}
+
+{# Listener perspective (observer view) #}
 {% else if render_mode == "dialogue_target" %}
 
-{% set drunk_level = get_faction_rank(actorUUID, "SkyrimNet_DrunkFaction") %}
-{% if drunk_level >= 0 %}
-{{ "## Intoxication" }}
-{% if drunk_level == 0 %}
-{{ decnpc(actorUUID).name }} seems slightly off - flushed cheeks, overly relaxed demeanor, subtle hint of alcohol on their breath.
-{% else if drunk_level == 1 %}
-{{ decnpc(actorUUID).name }} is noticeably drunk - swaying slightly, slurred words, and clearly intoxicated.
-{% else if drunk_level == 2 %}
-{{ decnpc(actorUUID).name }} is heavily drunk - stumbling badly, struggling to stand straight, speech is very slurred.
-{% else if drunk_level == 3 %}
-{{ decnpc(actorUUID).name }} is completely wasted - barely able to stand or speak coherently, on the verge of passing out.
-{% endif %}
-{% endif %}
+  {% if drunk_rank >= 0 %}
+    {% if drunk_rank >= 2 %}
+      {{ "## Intoxication Level" }}
+    {% endif %}
+    {% if drunk_rank <= 1 %}
+      {{ npc.name }} appears slightly tipsy - flushed cheeks, overly relaxed demeanor, subtle hint of alcohol on their breath. Louder voice, looser body language, mild clumsiness.
+    {% else if drunk_rank <= 3 %}
+      {{ npc.name }} is visibly drunk (Rank {{ drunk_rank }}) - swaying slightly, slurred words, unfocused eyes, clearly intoxicated. Stumbling gait, rambling speech, strong alcohol smell, inappropriate laughter or emotions.
+    {% else if drunk_rank <= 5 %}
+      {{ npc.name }} is heavily drunk (Rank {{ drunk_rank }}) - stumbling badly, struggling to stand straight, speech very slurred, coordination severely impaired. Leaning on walls or furniture, dropping items, confused expression, may be belligerent or overly friendly.
+    {% else if drunk_rank >= 6 %}
+      {{ npc.name }} is blackout drunk (Rank {{ drunk_rank }}) - barely able to stand or speak coherently, on the verge of passing out. Eyes unfocused or closed, incoherent mumbling, likely to collapse, may need physical support.
+    {% endif %}
+  {% endif %}
 
 {% endif %}
