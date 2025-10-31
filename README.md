@@ -1,9 +1,10 @@
-# SkyrimNet iActions - Quick Start
-
-**For detailed documentation, see the [SkyrimNet iActions Wiki](https://github.com/Gerkinfeltser/SkyrimNet_iActions/wiki).**
+# SkyrimNet iActions [Drunk+] - Quick Start
 
 > ## ⚠️ **Warning: Experimental**
 > Test on separate/non-precious saves first if you're risk-averse!
+
+## 🍻 [**Latest Release v0.4.0 here!!!**](https://github.com/Gerkinfeltser/SkyrimNet_iActions/releases/tag/0.4.0)
+**For detailed documentation, see the [SkyrimNet iActions Wiki](https://github.com/Gerkinfeltser/SkyrimNet_iActions/wiki).**
 
 ## TL;DR
 - **What it does**: NPCs drink, get drunk & sober over time (plus a few extras) via SkyrimNet actions
