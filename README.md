@@ -1,13 +1,13 @@
 # iActions [Drunk+] for SkyrimNet - Quick Start
 
-> ## ⚠️ **Warning: Experimental**
-> Test on separate/non-precious saves first if you're risk-averse!
-
-> ## 📢 **Important: v0.5.0 Rebrand & ESL Update**
-> This mod has been renamed from "SkyrimNet iActions" to "iActions" to clarify it's **not officially developed by the SkyrimNet team**. This version requires clean migration due to ESL conversion - see upgrade notes below.
-
 ## 🍻 [**Latest Release v0.5.0 here!!!**](https://github.com/Gerkinfeltser/iActions/releases/tag/0.5.0)
-**For detailed documentation, see the [iActions Wiki](https://github.com/Gerkinfeltser/iActions/wiki).**
+
+> ## ⚠️ **Warning: Experimental**
+> Test on separate/non-precious saves first if you're risk-averse!  
+> ### 📢 **Important: v0.5.0 Rebrand & ESL Update**
+> - This mod has been renamed from **"SkyrimNet iActions"** to **"iActions"** to clarify it's not officially developed by the SkyrimNet team.  
+> - 🚨 **This version requires clean migration due to ESL conversion** - [see pithy upgrade notes below](#quick-installation).  
+> - For overly-detailed documentation on all the things, see the [iActions Wiki](https://github.com/Gerkinfeltser/iActions/wiki).  
 
 ## TL;DR
 - **What it does**: NPCs drink, get drunk & sober over time (plus a few extras) via SkyrimNet actions
