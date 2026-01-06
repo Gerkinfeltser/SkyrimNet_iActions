@@ -1,3 +1,4 @@
+![iActions welcomes you!](images/iActions-banner.png)
 # iActions [Drunk+] for SkyrimNet - Quick Start
 
 ## 🎁 [**Latest Release v0.5.1 here!!!**](https://github.com/Gerkinfeltser/iActions/releases/tag/0.5.1)
