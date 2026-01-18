@@ -1,20 +1,18 @@
 ![iActions welcomes you!](images/iActions-banner.png)
 # iActions [Drunk+] for SkyrimNet - Quick Start
 
-## 🎁 [**Latest Release v0.5.1 here!!!**](https://github.com/Gerkinfeltser/iActions/releases/tag/0.5.1)
+## 👉 [**Latest Release v0.5.5 here!!!**](https://github.com/Gerkinfeltser/iActions/releases/tag/0.5.5)
 
 > ## ⚠️ **Warning: Experimental**
-> Test on separate/non-precious saves first if you're risk-averse!
-> ### 📢 **Important: v0.5.1 Exchange Items Update**
-> - **NEW:** NPCs can now request to trade/give/receive items with the player
-> - 🚨 **Upgrading from 0.5.0 (& below) requires clean migration** (new PlayerInventoryAlias) - [see upgrade notes below](#quick-installation)
-> - For overly-detailed documentation on all the things, see the [iActions Wiki](https://github.com/Gerkinfeltser/iActions/wiki).
+> Test on separate/non-precious saves first if you're risk-averse!  
+> 🚨 **Upgrading from less than v0.5.1 requires clean migration:** [See upgrade notes below](#quick-installation)  
+> (For overly-detailed documentation on all the things, see the [iActions Wiki](https://github.com/Gerkinfeltser/iActions/wiki).)
 
 ## TL;DR
-- **What it does**: NPCs drink, get drunk & sober over time (plus a few extras) via SkyrimNet actions
-- **NEW v0.5.1**: NPCs can now request to trade items with you (experimental)
-- **NEW v0.5.0**: 5-tier drunk system (Buzzed→Blackout), major performance optimizations, new MCM settings, rebranded to clarify non-official status
-- **Better drink sharing** → When NPCs need alcohol for drinking, an optional (on by default) dialog lets you provide it from your inventory (or automatically) if available
+### **What it does**: NPCs drink, get drunk & sober over time (plus a few extras) via SkyrimNet actions
+- **NEW v0.5.5**: NPCs can sit & drink at the same time... generally, prompt updated & ready for SkyrimNet Beta14
+- **v0.5.1.x**: NPCs can now request to trade items with you
+- **v0.5.0**: 5-tier drunk system (Buzzed→Blackout), major performance optimizations, new MCM settings, rebranded to clarify non-official status
 - **Install**: Mod manager → Load after OAR drunk animations → Configure in MCM
 - **Requirements**: Skyrim SE/AE + SkyrimNet + OAR + JContainers + PO3_SKSEFunctions + [drunk animations](https://www.nexusmods.com/skyrimspecialedition/mods/62191) (optional)
 
@@ -24,8 +22,8 @@
 3. Load AFTER OAR drunk animations mod
 4. Configure in MCM menu
 
-**⚠️ Upgrading? Clean install required**
-- PlayerInventoryAlias (v0.5.1) needs fresh install to function on existing saves
+**⚠️ Upgrading from 0.5.0? Clean install required**
+- PlayerInventoryAlias (introduced in v0.5.1) needs fresh install to function on existing saves
 
 **Universal upgrade steps (v0.4.0+):**
 1. MCM "Prepare for Uninstall" → Save → Quit → Disable mod → Load save → Save
@@ -47,10 +45,10 @@
 - Alcohol required by default (can be disabled completely or only in inns/taverns)
 - 20-second cooldowns to prevent drink/stumble spam
 - Auto-incremental sobering every 5 minutes (configurable)
-- **NEW v0.5.1**: Exchange Items (max types tracked: default 20, tested up to 50; more items = longer processing)
-- **NEW v0.5.0**: Max simultaneous drunk NPCs (8-128, default 32)
-- **NEW v0.5.0**: Toggle drink animations (user preference for animation timing)
-- **NEW v0.5.0**: Performance logging for optimization monitoring
+- **v0.5.1**: Exchange Items (max types tracked: default 20, tested up to 50; more items = longer processing)
+- **v0.5.0**: Max simultaneous drunk NPCs (8-128, default 32)
+- **v0.5.0**: Toggle drink animations (user preference for animation timing)
+- **v0.5.0**: Performance logging for optimization monitoring
 - Key-bindable shove (middle-mouse button works well, unbound by default)
 - All(/most) settings in MCM menu
 
