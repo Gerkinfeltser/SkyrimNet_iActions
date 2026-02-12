@@ -23,13 +23,15 @@
 3. Load AFTER OAR drunk animations mod
 4. Configure in MCM menu
 
-**⚠️ Upgrading from 0.5.0? Clean install required**
-- PlayerInventoryAlias (introduced in v0.5.1) needs fresh install to function on existing saves
-
-**Universal upgrade steps (v0.4.0+):**
-1. MCM "Prepare for Uninstall" → Save → Quit → Disable mod → Load save → Save
-2. Install new version → Enable → Load save
-3. Use `setstage SKI_ConfigManagerInstance 1` if MCM doesn't appear
+### ⚠️ Upgrading? Clean install required! (Sorry)
+1. iActions MCM's "Prepare for Uninstall"
+2. Save game & exit Skyrim completely
+3. In mod manager, disable iActions mod entry
+4. **Without iActions enabled:** Restart Skyrim & load save from step 2
+5. Save game & exit Skyrim completely (again)
+6. Enable new iActions version in mod manager
+7.  Restart Skyrim & load save from step 5
+(Use `setstage SKI_ConfigManagerInstance 1` if MCM doesn't appear after some time)
 
 **Upgrading from v0.3.0?** (No MCM uninstall)
 1. Use SkyrimNet WebUI: Run `WebUI_PrepareForUninstall()` on `iActions_MCM` script
