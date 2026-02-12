@@ -5,7 +5,7 @@
 
 > ## ⚠️ **Warning: Experimental**
 > Test on separate/non-precious saves first if you're risk-averse!  
-> 🚨 **Upgrading from less than v0.5.1 requires clean migration:** [See upgrade notes below](#quick-installation)  
+> 🚨 **Upgrading requires clean migration:** [See upgrade notes below](#quick-installation)  
 > (For overly-detailed documentation on all the things, see the [iActions Wiki](https://github.com/Gerkinfeltser/iActions/wiki).)
 
 ## TL;DR
@@ -23,7 +23,7 @@
 3. Load AFTER OAR drunk animations mod
 4. Configure in MCM menu
 
-### ⚠️ Upgrading? Clean install required! (Sorry)
+### Upgrading?
 1. iActions MCM's "Prepare for Uninstall"
 2. Save game & exit Skyrim completely
 3. In mod manager, disable iActions mod entry
