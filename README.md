@@ -27,7 +27,7 @@
 1. Run iActions MCM's "Prepare for Uninstall"
 2. Save game & exit Skyrim completely
 3. In mod manager, disable iActions mod entry
-4. **Without iActions enabled:** Restart Skyrim & load save from step 2
+4. *Without iActions enabled:* Restart Skyrim & load save from step 2
 5. Save game & exit Skyrim completely (again)
 6. Enable new iActions version in mod manager
 7.  Restart Skyrim & load save from step 5
