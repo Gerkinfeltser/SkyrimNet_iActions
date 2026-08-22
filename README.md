@@ -76,3 +76,7 @@
 ---
 
 For full details, see the [iActions Wiki](https://github.com/Gerkinfeltser/iActions/wiki).
+
+## Credits
+
+- **SeverActions** by Sever ([github.com/Severause/SeverActions](https://github.com/Severause/SeverActions)) — the SkyrimNet action pack this mod's Combat and Items action categories integrate with. The hierarchical category YAML structure follows SeverActions' design.
